@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="back">
+    <table class="tabela1">
+        <thead>
+            <tr>
+                <th class="tg-0lax" colspan="3">Cálculo IMC</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>Peso (ex: 1.70)</td>
+            <td><input id="peso" type="number" autofocus></td>
+        </tr>
+        <tr>
+            <td>Altura (ex: 69.2)</td>
+            <td><input id="altura" type="number"></td>
+        </tr>
+        <tr>
+            <td><button class="button-6" onclick="CalculaIMC();">Calcular</button></td>
+            <td><button class="button-6" onclick="LimpaIMC();">Limpar</button></td>
+        </tr>
+        <tr>
+            <th class="tg-0lax" colspan="2" id="resul" style="visibility: hidden;">Resultado<p id="resultado"></p></th>
+        </tr>
+    </table>
+
+    <table class="tg tabela2">
+        <thead>
+          <tr>
+            <tr>
+                <th class="tg-0lax" colspan="3">VEJA A INTERPRETAÇÃO DO IMC</th>
+              </tr>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-0lax">IMC</td>
+            <td class="tg-0lax">CLASSIFICAÇÃO</td>
+            <td class="tg-0lax">OBESIDADE (GRAU)</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">MENOR QUE 18,5</td>
+            <td class="tg-0lax">MAGREZA</td>
+            <td class="tg-0lax">0</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">ENTRE 18,5 E 24,9</td>
+            <td class="tg-0lax">NORMAL</td>
+            <td class="tg-0lax">0</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">ENTRE 25,0 E 29,9</td>
+            <td class="tg-0lax">SOBREPESO</td>
+            <td class="tg-0lax">I</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">ENTRE 30,0 E 39,9</td>
+            <td class="tg-0lax">OBESIDADE</td>
+            <td class="tg-0lax">II</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">MAIOR QUE 40,0</td>
+            <td class="tg-0lax">OBESIDADE GRAVE</td>
+            <td class="tg-0lax">III</td>
+          </tr>
+        </tbody>
+        </table>
+        <p>Fonte de dados: <a href="https://www.programasaudefacil.com.br/calculadora-de-imc">Acesse</p>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+    
